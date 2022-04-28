@@ -1,10 +1,34 @@
-import { Component } from '@angular/core';
+import { Component } from '@angular/core'
+import { TranslateService } from '@ngx-translate/core'
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'crm-angular';
+  title = 'crm-angular'
+  emailLabel!: string
+  passwordLabel!: string
+
+  private email: string = ''
+  private password: string = ''
+
+  constructor(private translate: TranslateService) {
+    this.translate.addLangs(['en', 'ar'])
+    translate.setDefaultLang('ar')
+    translate.use('en')
+  }
+  ngOnInit() {
+    this.title = this.translate.instant('welcomeMessage', {
+      firstName: 'variable',
+    })
+
+    // this.translate
+    //   .get(['login.username', 'login.password'])
+    //   .subscribe((translations: any) => {
+    //     this.emailLabel = translations['login.email']
+    //     this.passwordLabel = translations['login.password']
+    //   })
+  }
 }

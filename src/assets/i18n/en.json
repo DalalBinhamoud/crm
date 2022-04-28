@@ -1,0 +1,16 @@
+{
+  "welcomeMessage": "Thanks for joining, {{ firstName }}! It's great to have you!",
+  "auth": {
+    "firstName": "Enter your first name",
+    "lastName": "Enter your last name",
+    "email": "Enter your email",
+    "password": "Enter youre password",
+    "rePassword": "Re-enter youre password",
+    "login": "Login",
+    "register": "Register"
+  },
+  "errors": {
+    "required": "This field is required",
+    "invalidEmail": "Invalid email address"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "welcomeMessage": "مرحبا {{ firstName }}!",
+  "auth": {
+    "firstName": "الاسم الأول",
+    "lastName": "الاسم الأخير",
+    "email": "البريد الإلكتروني",
+    "password": "الرقم السري",
+    "rePassword": "إعادة كتابة الرقم السري",
+    "login": "تسجيل الدخول",
+    "register": "التسجيل"
+  },
+  "errors": {
+    "required": "هذا الحقل مطلوب",
+    "invalidEmail": "البريد الإلكتروني غير صحيح"
+  }
+}
