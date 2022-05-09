@@ -52,7 +52,11 @@ export class LoginComponent implements OnInit {
       )
       .subscribe((res: any) => {
         localStorage.setItem('token', res['token'])
-        this.router.navigate(['/agent/profile'])
+        this.router.navigate([
+          this.router.url.includes('client')
+            ? '/client/home'
+            : '/agent/profile',
+        ])
       })
   }
 }
