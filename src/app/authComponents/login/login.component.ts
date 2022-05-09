@@ -51,7 +51,6 @@ export class LoginComponent implements OnInit {
         this.loginForm.controls['password'].value,
       )
       .subscribe((res: any) => {
-        console.log('res=', res)
         localStorage.setItem('token', res['token'])
         this.router.navigate(['/agent/profile'])
       })

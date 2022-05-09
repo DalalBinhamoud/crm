@@ -5,12 +5,14 @@
     "lastName": "Enter your last name",
     "email": "Enter your email",
     "password": "Enter youre password",
-    "rePassword": "Re-enter youre password",
+    "confirmPassword": "Re-enter youre password",
     "login": "Login",
     "register": "Register"
   },
   "errors": {
     "required": "This field is required",
-    "invalidEmail": "Invalid email address"
+    "invalidEmail": "Invalid email address",
+    "invalidName": "Name shoud contain letters only",
+    "misMatch": "Password mismatch"
   }
 }

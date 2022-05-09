@@ -7,6 +7,10 @@ import { Injectable } from '@angular/core'
 export class AuthService {
   constructor(private http: HttpClient) {}
 
+  register(values: any) {
+    return this.http.post('/register', values)
+  }
+
   login(email: string, password: string) {
     let values = { email, password }
     return this.http.post('/login', values)

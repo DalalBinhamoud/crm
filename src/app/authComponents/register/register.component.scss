@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+
+  &__logo {
+    height: 10rem;
+    margin: 2.4rem 0;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    margin: 2.4rem 2.4rem 2rem;
+    & > * {
+      margin-bottom: 0.4rem;
+    }
+  }
+}
