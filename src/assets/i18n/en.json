@@ -14,5 +14,11 @@
     "invalidEmail": "Invalid email address",
     "invalidName": "Name shoud contain letters only",
     "misMatch": "Password mismatch"
+  },
+  "logout": "Logout",
+  "request": {
+    "list": "Requests",
+    "status": "Status:",
+    "type": "Request Type:"
   }
 }

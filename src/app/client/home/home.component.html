@@ -1,1 +1,11 @@
-<p>home works!</p>
+<mat-toolbar color="primary" class="container">
+  <button mat-icon-button aria-label="Example logo">
+    <img alt="logo" src="./assets/svg/logo.svg" class="container__logo" />
+  </button>
+
+  <button mat-icon-button>
+    <span>{{ 'logout' | translate }}</span>
+  </button>
+</mat-toolbar>
+
+<app-request></app-request>
