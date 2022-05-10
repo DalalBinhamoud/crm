@@ -15,6 +15,8 @@ import { APIInterceptor } from './_helpers/Interceptors/api-interceptor'
 import { ErrorInterceptor } from './_helpers/Interceptors/error-interceptor'
 import { MaterialModule } from './material/material.module'
 import { AuthModule } from './authComponents/auth.module'
+import { ClientModule } from './client/client.module'
+import { SharedModule } from './shared/shared.module'
 
 // AoT requires an exported function for factories
 export const httpTranslateLoaderFactory = (http: HttpClient) => {
@@ -29,6 +31,8 @@ export const httpTranslateLoaderFactory = (http: HttpClient) => {
     BrowserAnimationsModule,
     HttpClientModule,
     AuthModule,
+    ClientModule,
+    SharedModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
