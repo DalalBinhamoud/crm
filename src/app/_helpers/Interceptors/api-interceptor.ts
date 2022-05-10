@@ -21,11 +21,9 @@ export class APIInterceptor implements HttpInterceptor {
     // add header with basic auth credentials if user is logged in and request is to the api url
     // const user = this.authenticationService.userValue
     // const isLoggedIn = user && user.authdata
-    console.log('track=1', environment.baseUrl)
     const isApiUrl = request.url.startsWith(environment.baseUrl)
     // if (isLoggedIn && isApiUrl) {
     // const  request.clone({ url: `${environment.baseUrl}${request.url}` })
-    console.log('track=2', isApiUrl)
 
     const baseUrl = `${environment.baseUrl}${request.url}`
     if (!request.url.startsWith('/assets')) {
@@ -45,7 +43,6 @@ export class APIInterceptor implements HttpInterceptor {
     }
 
     // const baseUrl = request.clone({ url: `your-api-url/${request.url}` })
-    console.log('track=3', request)
     return next.handle(request)
   }
 }

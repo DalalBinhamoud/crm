@@ -1,7 +1,12 @@
 <div class="container">
   <img alt="logo" src="./assets/svg/logo.svg" class="container__logo" />
   <mat-card>
-    <form [formGroup]="loginForm" class="container__form" (ngSubmit)="login()">
+    <form
+      [formGroup]="loginForm"
+      class="container__form"
+      (ngSubmit)="login()"
+      id="loginForm"
+    >
       <mat-form-field>
         <mat-label>{{ 'auth.email' | translate }}</mat-label>
         <input

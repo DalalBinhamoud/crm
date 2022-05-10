@@ -20,9 +20,10 @@ export class AppComponent {
     translate.use('en')
   }
   ngOnInit() {
-    this.title = this.translate.instant('welcomeMessage', {
-      firstName: 'variable',
-    })
+    this.title = 'crm-angular app is running!'
+    // this.translate.instant('welcomeMessage', {
+    //   firstName: 'dalal',
+    // })
 
     // this.translate
     //   .get(['login.username', 'login.password'])
