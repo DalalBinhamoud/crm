@@ -17,6 +17,7 @@ import { MaterialModule } from './material/material.module'
 import { AuthModule } from './authComponents/auth.module'
 import { ClientModule } from './client/client.module'
 import { SharedModule } from './shared/shared.module'
+import { AgentModule } from './agent/agent.module'
 
 // AoT requires an exported function for factories
 export const httpTranslateLoaderFactory = (http: HttpClient) => {
@@ -33,6 +34,7 @@ export const httpTranslateLoaderFactory = (http: HttpClient) => {
     AuthModule,
     ClientModule,
     SharedModule,
+    AgentModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,

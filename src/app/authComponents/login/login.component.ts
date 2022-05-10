@@ -55,7 +55,7 @@ export class LoginComponent implements OnInit {
         this.router.navigate([
           this.router.url.includes('client')
             ? '/client/home'
-            : '/agent/profile',
+            : '/agent/requests',
         ])
       })
   }

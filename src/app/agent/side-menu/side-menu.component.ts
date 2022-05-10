@@ -9,7 +9,7 @@ import { BreakpointObserver } from '@angular/cdk/layout'
 })
 export class SideMenuComponent implements OnInit {
   events: string[] = []
-  opened: boolean = true
+  isExpanded: boolean = true
 
   constructor(private breakpointObserver: BreakpointObserver) {}
 
